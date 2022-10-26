@@ -1,0 +1,29 @@
+:root {
+	--shade1: #64361a;
+	--shade2: #D46a28;
+	--shade3: #Ffcc00;
+	--shade4: #67ffb8
+}
+
+body {
+	background-color: var(--shade2);
+}
+
+h3 {
+	font-family: Georgia, serif;
+	font-size: 20px;
+	color: var(--shade3);
+	text-decoration: underline;
+	text-shadow: 0 -5px 3px var(--shade1);
+}
+
+textarea, input {
+	background-color: var(--shade1);
+	color: var(--shade3);
+	border: 5px ridge var(--shade3);
+}
+
+textarea:focus, input:focus {
+	color: var(--shade4);
+	outline: none;
+}
