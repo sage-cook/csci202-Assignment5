@@ -6,15 +6,19 @@
 }
 
 body {
-	background-color: var(--shade2);
+	background-image: radial-gradient(var(--shade2) 60%,black);
+	color: var(--shade3);
+	font-family: Georgia, serif;
 }
 
 h3 {
-	font-family: Georgia, serif;
 	font-size: 20px;
-	color: var(--shade3);
 	text-decoration: underline;
 	text-shadow: 0 -5px 3px var(--shade1);
+}
+
+textarea {
+	resize: none;
 }
 
 textarea, input {
@@ -24,6 +28,14 @@ textarea, input {
 }
 
 textarea:focus, input:focus {
-	color: var(--shade4);
 	outline: none;
+}
+
+input:focus {
+	color: var(--shade4);
+}
+
+article {
+	width: 960px;
+	margin: auto;
 }

@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-	<TITLE>Eliza (elizabot.js)</TITLE>
+	<TITLE>Eliza Dungeon Master (elizabot.js)</TITLE>
 	<link rel="stylesheet" href="style.css">
 	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizabot.js"></SCRIPT>
 	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizadata.js"></SCRIPT>
@@ -67,7 +67,7 @@ function elizaStep() {
 <H3>Eliza Dungeon Master</H3>
 <TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
 <FORM NAME="e_form" onsubmit="elizaStep();return false">
-<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
+<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" READONLY="true" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
 <TR VALIGN="middle">
 	<TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
 	<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
@@ -75,6 +75,11 @@ function elizaStep() {
 </FORM>
 </TABLE>
 </CENTER>
-
+<br/>
+<article>
+<p>
+	In this page I have repurposed the Eliza chatbot to DM a simple roleplaying game for you. She will understand most simple commands like "go east" or "look around". Keep in mind that Eliza does not have any way of remembering previous pieces of conversation, so let's just say she's not the most consistent of DMs.
+</p>
+</article>
 </BODY>
 </HTML>
